@@ -465,7 +465,7 @@ export default function TransitionedPage() {
           onClick={() => router.push("/dashboard")}
           className="w-full"
         >
-          I can fix that
+          Let's Begin
         </ShimmerButton>
       </div>
     </div>
