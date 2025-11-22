@@ -460,8 +460,11 @@ export default function TransitionedPage() {
       </div>
 
       {/* New section with "Lets Begin" button - below the grids */}
-      <div className="mt-8 text-center">
-        <ShimmerButton onClick={() => router.push("/dashboard")}>
+      <div className="mt-8 text-center ">
+        <ShimmerButton
+          onClick={() => router.push("/dashboard")}
+          className="w-full"
+        >
           I can fix that
         </ShimmerButton>
       </div>

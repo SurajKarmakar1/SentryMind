@@ -13,6 +13,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { ValueLineBarChart } from "@/components/ui/value-line-bar-chart";
+import { DefaultRadialChart } from "@/components/ui/radial-chart";
 
 export default function Page() {
   return (
@@ -41,13 +43,27 @@ export default function Page() {
             </Breadcrumb> */}
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0 bg-black">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="bg-white/10 aspect-video rounded-xl" />
-            <div className="bg-white/10 aspect-video rounded-xl" />
-            <div className="bg-white/10 aspect-video rounded-xl" />
+        <div className="flex flex-1 flex-col gap-4 p-4 bg-black">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64">
+              <ValueLineBarChart />
+            </div>
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64">
+              <DefaultRadialChart />
+            </div>
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64 flex items-center justify-center">
+              <p className="text-gray-400">Additional Chart</p>
+            </div>
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64 flex items-center justify-center">
+              <p className="text-gray-400">Additional Chart</p>
+            </div>
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64 flex items-center justify-center">
+              <p className="text-gray-400">Additional Chart</p>
+            </div>
+            <div className="border border-dashed border-gray-600 rounded-none p-4 min-h-64 flex items-center justify-center">
+              <p className="text-gray-400">Additional Chart</p>
+            </div>
           </div>
-          <div className="bg-white/10 min-h-[100vh] flex-1 rounded-xl md:min-h-min" />
         </div>
       </SidebarInset>
     </SidebarProvider>
