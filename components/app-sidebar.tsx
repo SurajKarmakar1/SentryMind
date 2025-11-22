@@ -37,7 +37,6 @@ const data = {
     {
       name: "Sentry Mind",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
     },
   ],
   navMain: [
@@ -149,9 +148,7 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
-      </SidebarHeader>
+      <SidebarHeader></SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavProjects projects={data.projects} />

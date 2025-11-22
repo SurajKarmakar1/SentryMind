@@ -40,12 +40,12 @@ export default function TransitionedPage() {
   };
 
   return (
-    <div className="bg-black text-white flex flex-col items-center justify-center h-lvh p-4 font-sans">
+    <div className="bg-black text-white flex flex-col items-center justify-center min-h-screen p-4 font-sans">
       {/* Grids container */}
-      <div className="grid grid-cols-2 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
         {/* Allowed Apps Section */}
-        <div className="bg-black border border-dashed border-gray-600 p-6">
-          <h2 className="text-2xl font-sans text-white mb-4">
+        <div className="bg-black border border-dashed border-gray-600 p-4 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-sans text-white mb-4">
             Allowed Apps/Sites
           </h2>
           <div className="space-y-3 max-h-80 overflow-y-auto custom-scrollbar">
@@ -259,8 +259,8 @@ export default function TransitionedPage() {
         </div>
 
         {/* Blacklisted Apps Section */}
-        <div className="bg-black border border-dashed border-gray-600 p-6">
-          <h2 className="text-2xl font-sans mb-4 text-white">
+        <div className="bg-black border border-dashed border-gray-600 p-4 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-sans mb-4 text-white">
             Blacklisted Apps/Sites
           </h2>
           <div className="space-y-3 max-h-80 overflow-y-auto custom-scrollbar">
